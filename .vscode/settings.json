@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/193cc8da-de81-4baf-a77d-4acda93f47c6/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/WebAppSteveMaster",
+    "appService.deploySubpath": "src"
+}

@@ -1,0 +1,30 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h1 class="mb-4">Login</h1>
+            <form action="/auth" method="post">
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fas fa-user"></i> Email
+                    </label>
+                    <input type="email" name="email" class="form-control" placeholder="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fas fa-lock"></i> Password
+                    </label>
+                    <input type="password" name="password" class="form-control" placeholder="Password" id="password" required>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{{#if alertMessage}}
+<script>
+    window.onload = function() {
+        alert('{{alertMessage}}');
+    }
+</script>
+{{/if}}
